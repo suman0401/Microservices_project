@@ -1,0 +1,21 @@
+server:
+  port: 8084
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/
+      
+      
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/trip
+    password: root
+  jpa:
+     database-platform: org.hibernate.dialect.MySQL5Dialect
+     show-sql: true
+     hibernate:
+      ddl-auto: create
+  application:
+     name: WORKERS-SERVICE
